@@ -115,7 +115,7 @@ var timeup = 0;
 var notice = "";
 var qIdx = 0;
 var aIdx = 0;
-var gameTimer = 10;
+var gameTimer = 30;
 var indQuestion = "";
 var indAnswers = [];
 var indCorrect = "";
@@ -158,7 +158,7 @@ function stop() {
 }
 
 function reset() {
-    gameTimer = 10;
+    gameTimer = 30;
 }
 
                
@@ -173,8 +173,8 @@ function initiate() {
     indWrongInterval = 0;
     qIdx = 0;
     $(".question-container").empty();
-    $(".img-container").append('"<img class="'+'gen-image'+'" src="https://pixy.org/images/placeholder.png" height="300px" width="600px">');
-
+    // $(".img-container").append('"<img class="'+'gen-image'+'" src="https://pixy.org/images/placeholder.png" height="300px" width="600px">');
+    $(".img-container").append('<center><img class="triv-image" src="http://schmoesknow.com/wp-content/uploads/2016/07/We-Want-You.png" height="300px" width="600px"></center">');
     $(".start-container").append('<button class="resetButton">Restart</button>');
     $(".resetButton").on("click", function() {
         console.log("RESET GAME");
