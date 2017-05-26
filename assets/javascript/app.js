@@ -61,7 +61,7 @@ var questions = [{
         "answers": ["Santorini", "Capri", "Cyprus", "Ithaca"],
         "correctAnswer": "Cyprus",
         "correctVisual": "assets/images/correct.gif",
-        "wrongVisual": "assets/images/_53823_cap300cyprus.gif",
+        "wrongVisual": "assets/images/cyprus.gif",
         "intervalCorrect": "3",
         "intervalWrong": "5"
     },
