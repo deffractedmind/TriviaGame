@@ -126,10 +126,8 @@ var indCorrectInterval = 0;
 var indWrongInterval = 0;
 var indInterval = 0;
 var prevAnswerClass = "";
-var answerDiv = [".answer1", ".answer2", ".answer3", ".answer4"];
 var timeLeft;
 var checkAnswerWait;
-var gameTimerRunning;
 
 $(document).ready(function() {
     $(".startButton").on("click", function() {
@@ -224,7 +222,6 @@ function checkAnswer() {
                 $(".question-container").text(notice);
                 $(".answer").remove();
                 $(".question-container").append('<br><img src="' + indVis + '">');
-            
                 checkAnswerWait = setTimeout(prepNext, indCorrectInterval * 1000);
             } 
             else {
@@ -245,8 +242,8 @@ function checkAnswer() {
             $(".question-container").text(notice);
             $(".timer").empty();
             $(".question-container").text(notice);
-                $(".answer").remove();
-                $(".question-container").append('<br><img src="' + indVis + '">');
+            $(".answer").remove();
+            $(".question-container").append('<br><img src="' + indVis + '">');
             checkAnswerWait = setTimeout(prepNext, indWrongInterval * 1000);
         }
         console.log("correct: " + correct);
